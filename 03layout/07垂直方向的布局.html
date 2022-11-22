@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            background-color: #abc;
+            height: 600px;
+            /* 
+            默认情况下父元素的高度被内容撑开
+            */
+        }
+
+        .inner{
+            width: 200px;
+            background-color: #123;
+            height:200px;
+            margin-bottom: 100px;
+
+        }
+
+        .inner1{
+            width: 200px;
+            background-color: #123;
+            height:200px;
+          
+        }
+
+        .box1{
+            width: 300px;
+            height: 200px;
+            background-color: aquamarine;
+            /* 
+                子元素是在父元素的内容区中排列的，
+                    如果子元素的大小超过了父元素，则子元素会从父元素中溢出
+                    如果使用overflow属性来设置父元素如何处理溢出的子元素
+
+                    可选值：
+                            visible，默认值，子元素会从父元素中溢出，在父元素外部的位置显示
+                            hidden，溢出内容将会被裁减，不会显示
+                            scroll，生成两个滚动条，通过滚动条来查看完整的内容
+                            auto，根据需要生成滚动条
+
+                overflow-x：
+                overflow-y：
+            */
+
+            overflow: auto;
+        }
+
+        .box2{
+            width: 100px;
+            height: 400px;
+            background-color: darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="outer">
+         <div class="inner"></div>
+         <div class="inner1"></div>
+        </div> -->
+    
+    <div class="box1">
+    <!-- <div class="box2"></div> -->
+    少年十五二十时，步行夺得胡马骑。
+射杀山中白额虎，肯数邺下黄须儿！
+一身转战三千里，一剑曾当百万师。
+汉兵奋迅如霹雳，虏骑崩腾畏蒺藜。
+卫青不败由天幸，李广无功缘数奇。
+自从弃置便衰朽，世事蹉跎成白首。
+昔时飞箭无全目，今日垂杨生左肘。
+路旁时卖故侯瓜，门前学种先生柳。
+苍茫古木连穷巷，寥落寒山对虚牖。
+誓令疏勒出飞泉，不似颍川空使酒。
+贺兰山下阵如云，羽檄交驰日夕闻。
+节使三河募年少，诏书五道出将军。
+试拂铁衣如雪色，聊持宝剑动星文。
+愿得燕弓射天将，耻令越甲鸣吾军。
+莫嫌旧日云中守，犹堪一战取功勋。
+</div>
+</body>
+</html>
